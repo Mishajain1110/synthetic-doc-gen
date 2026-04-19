@@ -8,21 +8,6 @@ The repository provides separate pipelines for different document types, impleme
 
 ---
 
-## Repository Structure
-
-
-synthetic-doc-gen/
-│
-├── passport_files/ # Files required to run the passport synthetic generation pipeline
-├── visa_files/ # Files required to run the visa synthetic generation pipeline
-├── text_based_docs_files/ # Files required to run the text-based document generation pipeline
-│
-├── synthetic_passport_pipeline.ipynb
-├── synthetic_visa_pipeline.ipynb
-├── synthetic_text_based_doc_pipeline.ipynb
-│
-└── README.md
-
 
 ### Folder Description
 
@@ -33,7 +18,7 @@ synthetic-doc-gen/
   Contains the necessary files required to run the **visa synthetic document generation pipeline**.
 
 - **text_based_docs_files/**  
-  Contains assets and templates used for generating **text-based synthetic documents**.
+  Contains assets and templates used for generating **text-based synthetic document pipeline**.
 
 Each pipeline notebook expects the corresponding folder to be present with the required files before execution.
 
@@ -60,6 +45,7 @@ Example configuration in the notebook:
 ```python
 endpoint = "YOUR_AZURE_DOCUMENT_INTELLIGENCE_ENDPOINT"
 api_key = "YOUR_AZURE_API_KEY"
+```
 
 ### 2. GPT API Access
 
@@ -78,7 +64,7 @@ Example configuration in the code:
 ```python
 GPT_API_KEY = "YOUR_GPT_API_KEY"
 model_name = "gpt-3.5-turbo"
-
+```
 ---
 
 ## How to Run the Pipelines
