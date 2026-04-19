@@ -12,13 +12,13 @@ The repository provides separate pipelines for different document types, impleme
 ### Folder Description
 
 - **passport_files/**  
-  Contains all the templates, images, and supporting files required to run the **passport synthetic document pipeline**.
+  Contains all the templates, images, and supporting files required to run the **synthetic_passport_pipeline.ipynb**.
 
 - **visa_files/**  
-  Contains the necessary files required to run the **visa synthetic document generation pipeline**.
+  Contains the necessary files required to run the **synthetic_visa_pipeline.ipynb**.
 
 - **text_based_docs_files/**  
-  Contains assets and templates used for generating **text-based synthetic document pipeline**.
+  Contains supporting files and templates used for generating **synthetic_text_based_doc_pipeline.ipynb**.
 
 Each pipeline notebook expects the corresponding folder to be present with the required files before execution.
 
@@ -43,8 +43,8 @@ These credentials can be obtained by creating a **Document Intelligence resource
 Example configuration in the notebook:
 
 ```python
-endpoint = "YOUR_AZURE_DOCUMENT_INTELLIGENCE_ENDPOINT"
-api_key = "YOUR_AZURE_API_KEY"
+endpoint = "YOUR_API_ENDPOINT_HERE"
+api_key = "YOUR_API_KEY_HERE"
 ```
 
 ### 2. GPT API Access
@@ -57,12 +57,12 @@ https://github.com/chatanywhere/GPT_API_free
 
 Follow the instructions in the repository to obtain your **GPT API key**.
 
-Once you obtain the API key, add it in the notebook before running the pipeline.
+Once you obtain the API key, add it to the notebook before running the pipeline.
 
 Example configuration in the code:
 
 ```python
-GPT_API_KEY = "YOUR_GPT_API_KEY"
+GPT_API_KEY = "YOUR_API_KEY_HERE"
 model_name = "gpt-3.5-turbo"
 ```
 ---
